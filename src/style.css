@@ -241,7 +241,7 @@ ul, ul, li {
 }
 
 .read-more-checkbox:checked ~ .services__content__description__btn::before {
-    background-image: url(/assets/icons/arrow.svg);
+    background-image: url(./../assets/icons/arrow.svg);
     transform: rotate(180deg);
 }
 
