@@ -9,6 +9,7 @@
 
 body {
     font-family: 'TTLakes', sans-serif;
+   
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -168,11 +169,9 @@ ul, ul, li {
 }
 
 .services__slider__radiobtn {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .services__content {
