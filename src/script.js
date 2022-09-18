@@ -5,10 +5,10 @@ const readMoreButton = document.querySelector('.button-readmore');
 
 readMoreButton.addEventListener('click', function() {
     const activeDescription = document.querySelector('.services__content__description__text.active');
-    if ( ! activeDescription ) return 0;
+    if ( ! activeDescription ) return;
     
     activeDescription.classList.toggle('fullsize');
-    changeReadMoreButton();
+    updateReadMoreButton();
 })
 
 tabsButton.forEach(function(item) {
@@ -22,15 +22,15 @@ tabsButton.forEach(function(item) {
             })
             currentTab.classList.add('active');
 
-            changeReadMoreButton();
+            updateReadMoreButton();
         }  
     })
 })
 
 // Ф-ия, которая проверяет наличие класса fullsize и меняет текст кнопки
-function changeReadMoreButton () {
+function updateReadMoreButton () {
     const activeDescription = document.querySelector('.services__content__description__text.active');
-    if ( ! activeDescription) return 0;
+    if ( ! activeDescription) return;
 
     if (activeDescription.classList.contains('fullsize')) {
         readMoreButton.textContent = 'Скрыть';
