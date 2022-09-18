@@ -33,6 +33,7 @@ ul, ul, li {
     display: none !important;
 }
 
+.button-readmore,
 .title__button,
 .header__button {
     border: none;
@@ -217,6 +218,44 @@ ul, ul, li {
     align-items: center;
 }
 
+/* Тут начинаются эксперименты с кнопкой */
+
+.button-readmore {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    width: fit-content;
+    cursor: pointer;
+    /* Для центрирования псевдоэлемента before */
+    display: flex;
+    align-items: center;
+}
+
+.button-readmore:hover,
+.button-readmore:active {
+    color: var(--read-more-btn);
+}
+
+.button-readmore::before {
+    content: '';
+    background-image: url(./../assets/icons/arrow.svg);
+    width: 7px;
+    height: 10px;
+    margin-left: 8px;
+    margin-right: 16px;
+}
+
+.button-readmore.show::before {
+    transform: rotate(180deg);
+}
+
+.fullsize {
+    max-height: none !important;
+}
+
+/* Тут они заканчиваются */
+
 .services__content__description__btn:hover,
 .services__content__description__btn:active {
     color: var(--read-more-btn);
@@ -231,27 +270,6 @@ ul, ul, li {
     margin-left: 8px;
     margin-right: 16px;
 }
-
-.read-more-checkbox ~ .services__content__description__btn:after {
-    content: 'Читать далее'
-}
-
-.read-more-checkbox:checked ~ .services__content__description__btn:after {
-    content: 'Скрыть'
-}
-
-.read-more-checkbox:checked ~ .services__content__description__btn::before {
-    background-image: url(./../assets/icons/arrow.svg);
-    transform: rotate(180deg);
-}
-
-.read-more-checkbox {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    clip: rect(0 0 0 0);
-}
-
 
 /* ----- Media ----- */
 @media (min-width: 450px) {
@@ -287,7 +305,7 @@ ul, ul, li {
 }
 
 @media (min-width: 768px) {
-    .services__content__description__text {
+    .services__content__description__text.active {
         max-height: 12rem;
      }
 
@@ -339,7 +357,7 @@ ul, ul, li {
         padding-top: 20px;
      }
 
-    .services__content__description__text {
+     .services__content__description__text.active {
         max-width: 490px;
         max-height: 15rem;
      }
