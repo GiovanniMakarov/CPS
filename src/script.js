@@ -1,4 +1,3 @@
-// Изменение текста по кнопке слайдера 
 const tabsButton = document.querySelectorAll('.services__slider__radiobtn')
 const tabsItems = document.querySelectorAll('.services__content__description__text');
 const readMoreButton = document.querySelector('.button-readmore');
@@ -27,7 +26,6 @@ tabsButton.forEach(function(item) {
     })
 })
 
-// Ф-ия, которая проверяет наличие класса fullsize и меняет текст кнопки
 function updateReadMoreButton () {
     const activeDescription = document.querySelector('.services__content__description__text.active');
     if ( ! activeDescription) return;
