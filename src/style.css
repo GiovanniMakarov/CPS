@@ -218,8 +218,6 @@ ul, ul, li {
     align-items: center;
 }
 
-/* Тут начинаются эксперименты с кнопкой */
-
 .button-readmore {
     margin-top: 16px;
     font-size: 16px;
@@ -254,8 +252,6 @@ ul, ul, li {
     max-height: none !important;
 }
 
-/* Тут они заканчиваются */
-
 .services__content__description__btn:hover,
 .services__content__description__btn:active {
     color: var(--read-more-btn);
@@ -269,6 +265,120 @@ ul, ul, li {
 
     margin-left: 8px;
     margin-right: 16px;
+}
+
+/* ----- ASIDE ----- */
+
+.container__aside {
+    box-sizing: border-box;
+    width: 320px;
+    height: 100vh;
+    max-height: 1024px;
+    padding: 18px 24px 32px 24px;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+    position: relative;
+}
+
+.aside__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.aside__header__logo-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.aside__menu__link {
+    color: #1B1C21;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-decoration: none;
+}
+
+.aside__menu__link:hover {
+    color: #7E7E82;
+}
+
+.aside__menu__li {
+    margin-bottom: 2rem;
+}
+
+.active-link {
+    color: #7E7E82;
+}
+.active-link::before {
+    content: '';
+    position: absolute;
+    left: -4px;
+    margin-top: -4px;
+    width: 8px;
+    height: 32px;
+    background-color: #41F6D7;
+    border-radius: 10px;
+}
+
+.aside__footer {
+    position: absolute;
+    bottom: 32px;
+}
+
+.aside__footer__buttons-row {
+    margin-bottom: 1rem;
+}
+
+.aside__footer__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.aside__footer__contacts__email {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+.aside__footer__contacts__phone {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.aside__footer__language {
+    display: flex;
+    gap: 7px;
+}
+
+.aside__footer__language__button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.aside__footer__language__button:active {
+    transform: scale(1.08);
+   
+}
+
+.language-selected {
+    color: #7E7E82;
+}
+
+@media (max-height: 790px) {
+    .container__aside {
+        overflow:scroll;
+    }
+    .aside__footer {
+        position: static;
+    }
 }
 
 /* ----- Media ----- */
