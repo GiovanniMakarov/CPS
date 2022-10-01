@@ -12,10 +12,8 @@
 
 <body>
     <div class="container">
-        
-        <header class="header hidden">
+        <header class="header">
             <div class="header__burger-section">
-
                 <button type="button" class="header__button burger-menu-open">
                     <img src="./assets/icons/burger.svg" alt="burger menu">
                 </button>
@@ -23,7 +21,6 @@
                 <div class="header__logo">
                     <img src="./assets/icons/Logo.svg" atl="logo">
                 </div>
-            
             </div>
 
             <div class="header__buttons-row">
@@ -54,7 +51,65 @@
         </header>
     </div>
 
-    <main class="hidden">
+    <main class="main">
+        <section class="container__aside">
+            <aside class="aside">
+                <div class="aside__content__wrapper">
+                    <div class="aside__header">
+                        <div class="aside__header__logo-group">
+                            <button type="button" class="header__button burger-menu-close">
+                                <img src="./assets/icons/close.svg" alt="close burger menu">
+                            </button>
+                
+                            <div class="aside__header__logo">
+                                <img src="./assets/icons/Logo.svg" atl="logo">
+                            </div>
+                        </div>
+                        
+                        <button type="button" class="header__button">
+                            <img src="./assets/icons/search.svg" alt="search">
+                        </button>
+                    </div>
+                
+                    <menu class="aside__menu">
+                        <li class="aside__menu__li"><a href="#" class="aside__menu__link">Ремонт техники</a></li>
+                        <li class="aside__menu__li"><a href="#" class="aside__menu__link active-link">Услуги и сервисы</a></li>
+                        <li class="aside__menu__li"><a href="#" class="aside__menu__link">Корпоративным клиентам</a></li>
+                        <li class="aside__menu__li"><a href="#" class="aside__menu__link">Продавцам техники</a></li>
+                        <li class="aside__menu__li"><a href="#" class="aside__menu__link">Партнерам</a></li>
+                        <li class="aside__menu__li"><a href="#" class="aside__menu__link">Производителям</a></li>
+                        <li class="aside__menu__li"><a href="#" class="aside__menu__link">Наши сервисные центры</a></li>
+                        <li class="aside__menu__li"><a href="#" class="aside__menu__link">Контакты</a></li>
+                    </menu>
+                </div>
+
+                <div class="aside__footer">
+                    <div class="aside__footer__buttons-row">
+                        <button type="button" class="header__button">
+                            <img src="./assets/icons/call.svg" alt="call">
+                        </button>
+                        <button type="button" class="header__button">
+                            <img src="./assets/icons/chat.svg" alt="chat">
+                        </button>
+                        <button type="button" class="header__button">
+                            <img src="./assets/icons/profile.svg" alt="profile">
+                        </button>
+                    </div>
+    
+                    <div class="aside__footer__contacts">
+                        <span class="aside__footer__contacts__email">mail@cps.com</span>
+                        <span class="aside__footer__contacts__phone">8 800 890 8900</span>
+                    </div>
+    
+                    <div class="aside__footer__language">
+                        <button type="button" class="aside__footer__language__button language-selected">RU</button>
+                        <button type="button" class="aside__footer__language__button">EN</button>
+                        <button type="button" class="aside__footer__language__button">CH</button>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
         <section class="services">
             <div class="container">
                 <div class="services__title">
@@ -138,64 +193,8 @@
             </div>
         </section>
     </main>
-    <div class="blur-wrapper hidden"></div>
-    <div class="container__aside">
-        <aside>
-            <div class="aside__header">
-                <div class="aside__header__logo-group">
-                    <button type="button" class="header__button burger-menu-close">
-                        <img src="./assets/icons/close.svg" alt="close burger menu">
-                    </button>
-        
-                    <div class="aside__header__logo">
-                        <img src="./assets/icons/Logo.svg" atl="logo">
-                    </div>
-                </div>
-                
-                <button type="button" class="header__button">
-                    <img src="./assets/icons/search.svg" alt="search">
-                </button>
-            </div>
-
-            <menu class="aside__menu">
-                <li class="aside__menu__li"><a href="#" class="aside__menu__link">Ремонт техники</a></li>
-                <li class="aside__menu__li"><a href="#" class="aside__menu__link active-link">Услуги и сервисы</a></li>
-                <li class="aside__menu__li"><a href="#" class="aside__menu__link">Корпоративным клиентам</a></li>
-                <li class="aside__menu__li"><a href="#" class="aside__menu__link">Продавцам техники</a></li>
-                <li class="aside__menu__li"><a href="#" class="aside__menu__link">Партнерам</a></li>
-                <li class="aside__menu__li"><a href="#" class="aside__menu__link">Производителям</a></li>
-                <li class="aside__menu__li"><a href="#" class="aside__menu__link">Наши сервисные центры</a></li>
-                <li class="aside__menu__li"><a href="#" class="aside__menu__link">Контакты</a></li>
-            </menu>
-
-            <div class="aside__footer">
-                <div class="aside__footer__buttons-row">
-                    <button type="button" class="header__button">
-                        <img src="./assets/icons/call.svg" alt="call">
-                    </button>
-                    <button type="button" class="header__button">
-                        <img src="./assets/icons/chat.svg" alt="chat">
-                    </button>
-                    <button type="button" class="header__button">
-                        <img src="./assets/icons/profile.svg" alt="profile">
-                    </button>
-                </div>
-
-                <div class="aside__footer__contacts">
-                    <span class="aside__footer__contacts__email">mail@cps.com</span>
-                    <span class="aside__footer__contacts__phone">8 800 890 8900</span>
-                </div>
-
-                <div class="aside__footer__language">
-                    <button type="button" class="aside__footer__language__button language-selected">RU</button>
-                    <button type="button" class="aside__footer__language__button">EN</button>
-                    <button type="button" class="aside__footer__language__button">CH</button>
-                </div>
-            </div>
-        </aside>
-    </div>
+    <div class="blur-wrapper"></div>
     
-
 <script src="./src/script.js"></script>
 </body>
 </html>
