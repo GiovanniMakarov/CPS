@@ -244,13 +244,13 @@ ul, ul, li {
 .button-readmore::before {
     content: '';
     background-image: url(./../assets/icons/arrow.svg);
-    width: 7px;
-    height: 10px;
+    width: 8px;
+    height: 11px;
     margin-left: 8px;
     margin-right: 16px;
 }
 
-.button-readmore.show::before {
+.button-readmore.rotate::before {
     transform: rotate(180deg);
 }
 

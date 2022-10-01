@@ -31,11 +31,12 @@ function updateReadMoreButton () {
     if ( ! activeDescription) return;
 
     if (activeDescription.classList.contains('fullsize')) {
-        readMoreButton.textContent = 'Скрыть';
-        readMoreButton.classList.add('show');
+        readMoreButton.innerText = 'Скрыть';
+        readMoreButton.classList.add('rotate');
+
     } else {
-        readMoreButton.textContent = 'Читать далее';
-        readMoreButton.classList.remove('show');
+        readMoreButton.innerText = 'Читать далее';
+        readMoreButton.classList.remove('rotate');
     }
 }
 
