@@ -49,152 +49,151 @@
                 </div>
             </div>
         </header>
-    </div>
-
-    <main class="main">
-        <section class="container__aside">
-            <aside class="aside">
-                <div class="aside__content__wrapper">
-                    <div class="aside__header">
-                        <div class="aside__header__logo-group">
-                            <button type="button" class="header__button burger-menu-close">
-                                <img src="./assets/icons/close.svg" alt="close burger menu">
-                            </button>
-                
-                            <div class="aside__header__logo">
-                                <img src="./assets/icons/Logo.svg" atl="logo">
+    
+        <main class="main">
+            <section class="container__aside">
+                <aside class="aside">
+                    <div class="aside__content__wrapper">
+                        <div class="aside__header">
+                            <div class="aside__header__logo-group">
+                                <button type="button" class="header__button burger-menu-close">
+                                    <img src="./assets/icons/close.svg" alt="close burger menu">
+                                </button>
+                    
+                                <div class="aside__header__logo">
+                                    <img src="./assets/icons/Logo.svg" atl="logo">
+                                </div>
                             </div>
+                            
+                            <button type="button" class="header__button">
+                                <img src="./assets/icons/search.svg" alt="search">
+                            </button>
                         </div>
-                        
-                        <button type="button" class="header__button">
-                            <img src="./assets/icons/search.svg" alt="search">
-                        </button>
+                    
+                        <menu class="aside__menu">
+                            <li class="aside__menu__li"><a href="#" class="aside__menu__link">Ремонт техники</a></li>
+                            <li class="aside__menu__li"><a href="#" class="aside__menu__link active-link">Услуги и сервисы</a></li>
+                            <li class="aside__menu__li"><a href="#" class="aside__menu__link">Корпоративным клиентам</a></li>
+                            <li class="aside__menu__li"><a href="#" class="aside__menu__link">Продавцам техники</a></li>
+                            <li class="aside__menu__li"><a href="#" class="aside__menu__link">Партнерам</a></li>
+                            <li class="aside__menu__li"><a href="#" class="aside__menu__link">Производителям</a></li>
+                            <li class="aside__menu__li"><a href="#" class="aside__menu__link">Наши сервисные центры</a></li>
+                            <li class="aside__menu__li"><a href="#" class="aside__menu__link">Контакты</a></li>
+                        </menu>
                     </div>
-                
-                    <menu class="aside__menu">
-                        <li class="aside__menu__li"><a href="#" class="aside__menu__link">Ремонт техники</a></li>
-                        <li class="aside__menu__li"><a href="#" class="aside__menu__link active-link">Услуги и сервисы</a></li>
-                        <li class="aside__menu__li"><a href="#" class="aside__menu__link">Корпоративным клиентам</a></li>
-                        <li class="aside__menu__li"><a href="#" class="aside__menu__link">Продавцам техники</a></li>
-                        <li class="aside__menu__li"><a href="#" class="aside__menu__link">Партнерам</a></li>
-                        <li class="aside__menu__li"><a href="#" class="aside__menu__link">Производителям</a></li>
-                        <li class="aside__menu__li"><a href="#" class="aside__menu__link">Наши сервисные центры</a></li>
-                        <li class="aside__menu__li"><a href="#" class="aside__menu__link">Контакты</a></li>
+
+                    <div class="aside__footer">
+                        <div class="aside__footer__buttons-row">
+                            <button type="button" class="header__button">
+                                <img src="./assets/icons/call.svg" alt="call">
+                            </button>
+                            <button type="button" class="header__button">
+                                <img src="./assets/icons/chat.svg" alt="chat">
+                            </button>
+                            <button type="button" class="header__button">
+                                <img src="./assets/icons/profile.svg" alt="profile">
+                            </button>
+                        </div>
+        
+                        <div class="aside__footer__contacts">
+                            <span class="aside__footer__contacts__email">mail@cps.com</span>
+                            <span class="aside__footer__contacts__phone">8 800 890 8900</span>
+                        </div>
+        
+                        <div class="aside__footer__language">
+                            <button type="button" class="aside__footer__language__button language-selected">RU</button>
+                            <button type="button" class="aside__footer__language__button">EN</button>
+                            <button type="button" class="aside__footer__language__button">CH</button>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+
+            <section class="services">
+                <div class="container">
+                    <div class="services__title">
+                        <h2>Услуги и сервисы</h2>
+                        <div class="services__title__buttons-row">
+                            <button type="button" class="header__button">
+                                <span class="title__button">Оставить заявку</span>
+                                <img src="./assets/icons/checkstatus.svg" alt="checkstatus">
+                            </button>
+                            <button type="button" class="header__button">
+                                <span class="title__button">Статус ремонта</span> 
+                                <img src="./assets/icons/checkstatus.svg" alt="checkstatus">
+                            </button>
+                        </div>
+                    </div>
+
+                    <menu class="services__slider">
+                        <li><label class="services__slider__button">
+                            <input type="radio" name="services__slider__radio" class="services__slider__radiobtn" data-tab="#brands" checked>
+                            <span class="services__slider__span">Ремонтируемые бренды</span>
+                        </label></li>
+                        <li><label class="services__slider__button">
+                            <input type="radio" name="services__slider__radio" class="services__slider__radiobtn" data-tab="#devices">
+                            <span class="services__slider__span">Ремонтируемые устройства</span>
+                        </label></li>
+                        <li><label class="services__slider__button">
+                            <input type="radio" name="services__slider__radio" class="services__slider__radiobtn" data-tab="#price">
+                            <span class="services__slider__span">Цены на услуги</span>
+                        </label></li>
+                        <li><label class="services__slider__button">
+                            <input type="radio" name="services__slider__radio" class="services__slider__radiobtn" data-tab="#addresses">
+                            <span class="services__slider__span">Адрес сервисных центров</span>
+                        </label></li>
+                        <li><label class="services__slider__button">
+                            <input type="radio" name="services__slider__radio" class="services__slider__radiobtn" data-tab="#discount">
+                            <span class="services__slider__span">Специальные цены</span>
+                        </label></li>
+                        <li><label class="services__slider__button">
+                            <input type="radio" name="services__slider__radio" class="services__slider__radiobtn" data-tab="#reviews">
+                            <span class="services__slider__span">Отзывы</span>
+                        </label></li>
                     </menu>
-                </div>
 
-                <div class="aside__footer">
-                    <div class="aside__footer__buttons-row">
-                        <button type="button" class="header__button">
-                            <img src="./assets/icons/call.svg" alt="call">
-                        </button>
-                        <button type="button" class="header__button">
-                            <img src="./assets/icons/chat.svg" alt="chat">
-                        </button>
-                        <button type="button" class="header__button">
-                            <img src="./assets/icons/profile.svg" alt="profile">
-                        </button>
-                    </div>
-    
-                    <div class="aside__footer__contacts">
-                        <span class="aside__footer__contacts__email">mail@cps.com</span>
-                        <span class="aside__footer__contacts__phone">8 800 890 8900</span>
-                    </div>
-    
-                    <div class="aside__footer__language">
-                        <button type="button" class="aside__footer__language__button language-selected">RU</button>
-                        <button type="button" class="aside__footer__language__button">EN</button>
-                        <button type="button" class="aside__footer__language__button">CH</button>
-                    </div>
-                </div>
-            </aside>
-        </section>
+                    <div class="services__content">
+                        <div class="services__content__description">
+                            
+                            <div class="services__content__description__text active" id="brands">
+                                <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                                <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+                            </div>
 
-        <section class="services">
-            <div class="container">
-                <div class="services__title">
-                    <h2>Услуги и сервисы</h2>
-                    <div class="services__title__buttons-row">
-                        <button type="button" class="header__button">
-                            <span class="title__button">Оставить заявку</span>
-                            <img src="./assets/icons/checkstatus.svg" alt="checkstatus">
-                        </button>
-                        <button type="button" class="header__button">
-                            <span class="title__button">Статус ремонта</span> 
-                            <img src="./assets/icons/checkstatus.svg" alt="checkstatus">
-                        </button>
+                            <div class="services__content__description__text" id="devices">
+                                    <p>Ремонтируемые девайсы</p>
+                            </div>
+
+                            <div class="services__content__description__text" id="price">
+                                <p>Прайс</p>
+                            </div>
+
+                            <div class="services__content__description__text" id="addresses">
+                                <p>addresses</p>
+                            </div>
+
+                            <div class="services__content__description__text" id="discount">
+                                <p>discount</p>
+                            </div>
+
+                            <div class="services__content__description__text" id="reviews">
+                                <p>reviews</p>
+                            </div>
+
+                            <button type="button" class="button-readmore">Читать далее</button>
+                        </div>
+
+                        <picture class="services__content__img">
+                            <source srcset="./assets/img/Services-img-full.jpg" media="(min-width: 1120px)" width="530" height="307">
+                            <source srcset="./assets/img/Services-img-pad.jpg" media="(min-width: 768px)" width="360" height="208">
+                            <img src="./assets/img/Services-img-mobile.jpg" alt="Вывеска компании CPS" width="320" height="176">
+                        </picture>
                     </div>
                 </div>
-
-                <menu class="services__slider">
-                    <li><label class="services__slider__button">
-                        <input type="radio" name="services__slider__radio" class="services__slider__radiobtn" data-tab="#brands" checked>
-                        <span class="services__slider__span">Ремонтируемые бренды</span>
-                    </label></li>
-                    <li><label class="services__slider__button">
-                        <input type="radio" name="services__slider__radio" class="services__slider__radiobtn" data-tab="#devices">
-                        <span class="services__slider__span">Ремонтируемые устройства</span>
-                    </label></li>
-                    <li><label class="services__slider__button">
-                        <input type="radio" name="services__slider__radio" class="services__slider__radiobtn" data-tab="#price">
-                        <span class="services__slider__span">Цены на услуги</span>
-                    </label></li>
-                    <li><label class="services__slider__button">
-                        <input type="radio" name="services__slider__radio" class="services__slider__radiobtn" data-tab="#addresses">
-                        <span class="services__slider__span">Адрес сервисных центров</span>
-                    </label></li>
-                    <li><label class="services__slider__button">
-                        <input type="radio" name="services__slider__radio" class="services__slider__radiobtn" data-tab="#discount">
-                        <span class="services__slider__span">Специальные цены</span>
-                    </label></li>
-                    <li><label class="services__slider__button">
-                        <input type="radio" name="services__slider__radio" class="services__slider__radiobtn" data-tab="#reviews">
-                        <span class="services__slider__span">Отзывы</span>
-                    </label></li>
-                </menu>
-
-                <div class="services__content">
-                    <div class="services__content__description">
-                        
-                        <div class="services__content__description__text active" id="brands">
-                            <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                            <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-                        </div>
-
-                        <div class="services__content__description__text" id="devices">
-                                <p>Ремонтируемые девайсы</p>
-                        </div>
-
-                        <div class="services__content__description__text" id="price">
-                            <p>Прайс</p>
-                        </div>
-
-                        <div class="services__content__description__text" id="addresses">
-                            <p>addresses</p>
-                        </div>
-
-                        <div class="services__content__description__text" id="discount">
-                            <p>discount</p>
-                        </div>
-
-                        <div class="services__content__description__text" id="reviews">
-                            <p>reviews</p>
-                        </div>
-
-                        <button type="button" class="button-readmore">Читать далее</button>
-                    </div>
-
-                    <picture class="services__content__img">
-                        <source srcset="./assets/img/Services-img-full.jpg" media="(min-width: 1120px)" width="530" height="307">
-                        <source srcset="./assets/img/Services-img-pad.jpg" media="(min-width: 768px)" width="360" height="208">
-                        <img src="./assets/img/Services-img-mobile.jpg" alt="Вывеска компании CPS" width="320" height="176">
-                    </picture>
-                </div>
-            </div>
-        </section>
-    </main>
-    <div class="blur-wrapper"></div>
-    
+            </section>
+        </main>
+        <div class="blur-wrapper"></div>
+    </div>
 <script src="./src/script.js"></script>
 </body>
 </html>
