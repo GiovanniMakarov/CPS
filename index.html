@@ -51,7 +51,7 @@
         </header>
     
         <main class="main">
-            <section class="container__aside">
+            <section class="aside__container">
                 <aside class="aside">
                     <div class="aside__content__wrapper">
                         <div class="aside__header">
@@ -71,14 +71,14 @@
                         </div>
                     
                         <menu class="aside__menu">
-                            <li class="aside__menu__li"><a href="#" class="aside__menu__link">Ремонт техники</a></li>
-                            <li class="aside__menu__li"><a href="#" class="aside__menu__link active-link">Услуги и сервисы</a></li>
-                            <li class="aside__menu__li"><a href="#" class="aside__menu__link">Корпоративным клиентам</a></li>
-                            <li class="aside__menu__li"><a href="#" class="aside__menu__link">Продавцам техники</a></li>
-                            <li class="aside__menu__li"><a href="#" class="aside__menu__link">Партнерам</a></li>
-                            <li class="aside__menu__li"><a href="#" class="aside__menu__link">Производителям</a></li>
-                            <li class="aside__menu__li"><a href="#" class="aside__menu__link">Наши сервисные центры</a></li>
-                            <li class="aside__menu__li"><a href="#" class="aside__menu__link">Контакты</a></li>
+                            <li class="aside__menu__item"><a href="#" class="aside__menu__item__link">Ремонт техники</a></li>
+                            <li class="aside__menu__item"><a href="#" class="aside__menu__item__link active-link">Услуги и сервисы</a></li>
+                            <li class="aside__menu__item"><a href="#" class="aside__menu__item__link">Корпоративным клиентам</a></li>
+                            <li class="aside__menu__item"><a href="#" class="aside__menu__item__link">Продавцам техники</a></li>
+                            <li class="aside__menu__item"><a href="#" class="aside__menu__item__link">Партнерам</a></li>
+                            <li class="aside__menu__item"><a href="#" class="aside__menu__item__link">Производителям</a></li>
+                            <li class="aside__menu__item"><a href="#" class="aside__menu__item__link">Наши сервисные центры</a></li>
+                            <li class="aside__menu__item"><a href="#" class="aside__menu__item__link">Контакты</a></li>
                         </menu>
                     </div>
 
@@ -96,8 +96,9 @@
                         </div>
         
                         <div class="aside__footer__contacts">
-                            <span class="aside__footer__contacts__email">mail@cps.com</span>
-                            <span class="aside__footer__contacts__phone">8 800 890 8900</span>
+                            <a href="mailto: mail@cps.com" class="aside__footer__contacts__email">mail@cps.com</a>
+
+                            <a href="tel:88008908900" class="aside__footer__contacts__phone">8 800 890 8900</a>
                         </div>
         
                         <div class="aside__footer__language">
@@ -109,88 +110,88 @@
                 </aside>
             </section>
 
-            <section class="services">
-                <div class="container">
-                    <div class="services__title">
-                        <h2>Услуги и сервисы</h2>
-                        <div class="services__title__buttons-row">
-                            <button type="button" class="header__button">
-                                <span class="title__button">Оставить заявку</span>
-                                <img src="./assets/icons/checkstatus.svg" alt="checkstatus">
-                            </button>
-                            <button type="button" class="header__button">
-                                <span class="title__button">Статус ремонта</span> 
-                                <img src="./assets/icons/checkstatus.svg" alt="checkstatus">
-                            </button>
-                        </div>
-                    </div>
-
-                    <menu class="services__slider">
-                        <li><label class="services__slider__button">
-                            <input type="radio" name="services__slider__radio" class="services__slider__radiobtn" data-tab="#brands" checked>
-                            <span class="services__slider__span">Ремонтируемые бренды</span>
-                        </label></li>
-                        <li><label class="services__slider__button">
-                            <input type="radio" name="services__slider__radio" class="services__slider__radiobtn" data-tab="#devices">
-                            <span class="services__slider__span">Ремонтируемые устройства</span>
-                        </label></li>
-                        <li><label class="services__slider__button">
-                            <input type="radio" name="services__slider__radio" class="services__slider__radiobtn" data-tab="#price">
-                            <span class="services__slider__span">Цены на услуги</span>
-                        </label></li>
-                        <li><label class="services__slider__button">
-                            <input type="radio" name="services__slider__radio" class="services__slider__radiobtn" data-tab="#addresses">
-                            <span class="services__slider__span">Адрес сервисных центров</span>
-                        </label></li>
-                        <li><label class="services__slider__button">
-                            <input type="radio" name="services__slider__radio" class="services__slider__radiobtn" data-tab="#discount">
-                            <span class="services__slider__span">Специальные цены</span>
-                        </label></li>
-                        <li><label class="services__slider__button">
-                            <input type="radio" name="services__slider__radio" class="services__slider__radiobtn" data-tab="#reviews">
-                            <span class="services__slider__span">Отзывы</span>
-                        </label></li>
-                    </menu>
-
-                    <div class="services__content">
-                        <div class="services__content__description">
-                            
-                            <div class="services__content__description__text active" id="brands">
-                                <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                                <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+            <div class="container">
+                <section class="services">
+                        <div class="services__title">
+                            <h2>Услуги и сервисы</h2>
+                            <div class="services__title__buttons-row">
+                                <button type="button" class="header__button">
+                                    <span class="title__button">Оставить заявку</span>
+                                    <img src="./assets/icons/checkstatus.svg" alt="checkstatus">
+                                </button>
+                                <button type="button" class="header__button">
+                                    <span class="title__button">Статус ремонта</span> 
+                                    <img src="./assets/icons/checkstatus.svg" alt="checkstatus">
+                                </button>
                             </div>
-
-                            <div class="services__content__description__text" id="devices">
-                                    <p>Ремонтируемые девайсы</p>
-                            </div>
-
-                            <div class="services__content__description__text" id="price">
-                                <p>Прайс</p>
-                            </div>
-
-                            <div class="services__content__description__text" id="addresses">
-                                <p>addresses</p>
-                            </div>
-
-                            <div class="services__content__description__text" id="discount">
-                                <p>discount</p>
-                            </div>
-
-                            <div class="services__content__description__text" id="reviews">
-                                <p>reviews</p>
-                            </div>
-
-                            <button type="button" class="button-readmore">Читать далее</button>
                         </div>
 
-                        <picture class="services__content__img">
-                            <source srcset="./assets/img/Services-img-full.jpg" media="(min-width: 1120px)" width="530" height="307">
-                            <source srcset="./assets/img/Services-img-pad.jpg" media="(min-width: 768px)" width="360" height="208">
-                            <img src="./assets/img/Services-img-mobile.jpg" alt="Вывеска компании CPS" width="320" height="176">
-                        </picture>
-                    </div>
-                </div>
-            </section>
+                        <menu class="services__slider">
+                            <li><label class="services__slider__button">
+                                <input type="radio" name="services__slider__radio" class="services__slider__radiobtn" data-tab="#brands" checked>
+                                <span class="services__slider__span">Ремонтируемые бренды</span>
+                            </label></li>
+                            <li><label class="services__slider__button">
+                                <input type="radio" name="services__slider__radio" class="services__slider__radiobtn" data-tab="#devices">
+                                <span class="services__slider__span">Ремонтируемые устройства</span>
+                            </label></li>
+                            <li><label class="services__slider__button">
+                                <input type="radio" name="services__slider__radio" class="services__slider__radiobtn" data-tab="#price">
+                                <span class="services__slider__span">Цены на услуги</span>
+                            </label></li>
+                            <li><label class="services__slider__button">
+                                <input type="radio" name="services__slider__radio" class="services__slider__radiobtn" data-tab="#addresses">
+                                <span class="services__slider__span">Адрес сервисных центров</span>
+                            </label></li>
+                            <li><label class="services__slider__button">
+                                <input type="radio" name="services__slider__radio" class="services__slider__radiobtn" data-tab="#discount">
+                                <span class="services__slider__span">Специальные цены</span>
+                            </label></li>
+                            <li><label class="services__slider__button">
+                                <input type="radio" name="services__slider__radio" class="services__slider__radiobtn" data-tab="#reviews">
+                                <span class="services__slider__span">Отзывы</span>
+                            </label></li>
+                        </menu>
+
+                        <div class="services__content">
+                            <div class="services__content__description">
+                                
+                                <div class="services__content__description__text active" id="brands">
+                                    <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                                    <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+                                </div>
+
+                                <div class="services__content__description__text" id="devices">
+                                        <p>Ремонтируемые девайсы</p>
+                                </div>
+
+                                <div class="services__content__description__text" id="price">
+                                    <p>Прайс</p>
+                                </div>
+
+                                <div class="services__content__description__text" id="addresses">
+                                    <p>addresses</p>
+                                </div>
+
+                                <div class="services__content__description__text" id="discount">
+                                    <p>discount</p>
+                                </div>
+
+                                <div class="services__content__description__text" id="reviews">
+                                    <p>reviews</p>
+                                </div>
+
+                                <button type="button" class="button-readmore">Читать далее</button>
+                            </div>
+
+                            <picture class="services__content__img">
+                                <source srcset="./assets/img/Services-img-full.jpg" media="(min-width: 1120px)" width="530" height="307">
+                                <source srcset="./assets/img/Services-img-pad.jpg" media="(min-width: 768px)" width="360" height="208">
+                                <img src="./assets/img/Services-img-mobile.jpg" alt="Вывеска компании CPS" width="320" height="176">
+                            </picture>
+                        </div>
+                </section>
+            </div>
         </main>
         <div class="blur-wrapper"></div>
     </div>

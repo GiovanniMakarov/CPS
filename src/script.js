@@ -45,9 +45,9 @@ function updateReadMoreButton () {
 
 const asideMenuButtonOpen = document.querySelector('.burger-menu-open');
 const asideMenuButtonClose = document.querySelector('.burger-menu-close');
-const asideMenu = document.querySelector('.container__aside');
+const asideMenu = document.querySelector('.aside__container');
 const blurBlock = document.querySelector('.blur-wrapper');
-const asideMenuLinks = document.querySelectorAll('.aside__menu__link');
+const asideMenuLinks = document.querySelectorAll('.aside__menu__item__link');
 
 asideMenuButtonOpen.addEventListener('click', () => openAsideMenu());
 
