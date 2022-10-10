@@ -7,7 +7,7 @@ readMoreButton.addEventListener('click', function() {
     if ( ! activeDescription ) return;
     
     activeDescription.classList.toggle('fullsize');
-    updateReadMoreButton();
+    updateReadMoreButton('.services__content__description__text.active', '.button-readmore');
 })
 
 tabsButton.forEach(function(item) {
@@ -21,16 +21,17 @@ tabsButton.forEach(function(item) {
             })
             currentTab.classList.add('active');
 
-            updateReadMoreButton();
-        }  
+            updateReadMoreButton('.services__content__description__text.active', '.button-readmore');
+        }
     })
 })
 
-function updateReadMoreButton () {
-    const activeDescription = document.querySelector('.services__content__description__text.active');
-    if ( ! activeDescription) return;
+function updateReadMoreButton (blockClass, buttonClass) {
+    const contentBlock = document.querySelector(blockClass);
+    const readMoreButton = document.querySelector(buttonClass);
+    if ( ! contentBlock) return;
 
-    if (activeDescription.classList.contains('fullsize')) {
+    if (contentBlock.classList.contains('fullsize')) {
         readMoreButton.innerText = 'Скрыть';
         readMoreButton.classList.add('rotate');
 
@@ -44,20 +45,22 @@ function updateReadMoreButton () {
 // Mobile menu
 
 const asideMenuButtonOpen = document.querySelector('.burger-menu-open');
-const asideMenuButtonClose = document.querySelector('.burger-menu-close');
 const asideMenu = document.querySelector('.aside__container');
 const blurBlock = document.querySelector('.blur-wrapper');
-const asideMenuLinks = document.querySelectorAll('.aside__menu__item__link');
 
 asideMenuButtonOpen.addEventListener('click', () => openAsideMenu());
 
-asideMenuButtonClose.addEventListener('click', () => closeAsideMenu());
-
 blurBlock.addEventListener('click', () => closeAsideMenu());
 
-asideMenuLinks.forEach(function(item) {
-    item.addEventListener('click', () => closeAsideMenu());
-})
+asideMenu.addEventListener('click', event => {
+    if (event.target.parentNode.classList.contains('burger-menu-close')) {
+        closeAsideMenu();
+    };
+
+    if (event.target.classList.contains('aside__menu__item__link')) {
+        closeAsideMenu();
+    };
+});
 
 function closeAsideMenu () {
     asideMenu.classList.remove('show');
@@ -70,3 +73,53 @@ function openAsideMenu () {
     blurBlock.classList.add('show');
     document.body.classList.add('no-scroll');
 }
+
+
+// Swiper, read more button for brands block
+
+const slider = document.querySelector('.swiper');
+const readMoreButtonBrands = document.querySelector('.button-readmore.brands');
+let swiper;
+
+mobileSlider();
+
+window.addEventListener('resize', () => {
+    mobileSlider();
+})
+
+readMoreButtonBrands.addEventListener ('click', () => {
+    const brandsBlock = document.querySelector('.swiper-wrapper.brands-wrapper');
+
+    brandsBlock.classList.toggle('fullsize');
+
+    updateReadMoreButton('.swiper-wrapper.brands-wrapper', '.button-readmore.brands');
+})
+
+
+function mobileSlider() {
+    if (window.innerWidth < 768 && slider.dataset.mobile == 'false') {
+        swiper = new Swiper(".swiper", {
+            slidesPerView: "auto",
+            spaceBetween: 16,
+            centeredSlides: false,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+        slider.dataset.mobile = 'true'; 
+        readMoreButtonBrands.classList.add('hidden');
+    }
+
+    if (window.innerWidth >= 768) {
+        slider.dataset.mobile = 'false'; 
+
+        if (slider.classList.contains('swiper-initialized')) {
+            swiper.destroy();
+        }
+
+        readMoreButtonBrands.classList.remove('hidden');
+    }
+}
+

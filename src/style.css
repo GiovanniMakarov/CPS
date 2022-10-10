@@ -420,6 +420,120 @@ ul, ul, li {
     overflow-y: hidden;
 }
 
+/* ----- Brands section ----- */
+
+.brands {
+    background-color: var(--background-color);
+}
+
+.brands__content {
+    margin-left: 16px;
+    padding-bottom: 32px;
+}
+
+.brands__cards__card__img {
+    max-width: 128px;
+}
+
+.card-button {
+    background-image: url(./../assets/icons/go.svg);
+    width: 40px;
+    height: 40px;
+}
+
+.card-button:active {
+    transform: scale(0.95); 
+    transition: 0s;
+}
+
+.section-name {
+    padding: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: var(--services-text-color);
+    background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+    margin-bottom: 16px;
+}
+
+
+/* Swiper */
+
+.swiper {
+    width: 1wh;
+    height: 100%;
+    padding-bottom: 36px;
+
+}
+
+.swiper-slide.brands {
+    display: flex;
+    max-width: 240px;
+}
+
+.swiper-slide__card.brands {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+
+    box-sizing: border-box;
+    width: 240px;
+    height: 72px;
+    padding: 16px;
+}
+
+.swiper-pagination-bullet {
+    background-color: #979797;
+
+}
+.swiper-pagination-bullet-active {
+    background-color: #B5B6BC
+}
+
+@media (min-width: 768px) {
+    .swiper-wrapper.brands-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(224px, 240px));
+        row-gap: 16px; 
+        column-gap: 24px;
+        margin-top: 16px;
+
+        max-height: 160px;
+        overflow: hidden;
+    }
+
+    .swiper {
+        padding-bottom: 0;
+    }
+
+    .swiper-pagination {
+        display: none;
+    } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-height: 790px) {
     .aside__container {
         overflow: scroll;
