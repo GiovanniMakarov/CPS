@@ -133,28 +133,28 @@ ul, ul, li {
 }
 
 .burger-menu-open {
-    background-image: url(./assets/icons/burger-open.svg);
+    background-image: url(./../assets/icons/burger-open.svg);
 }
 .call-button {
-    background-image: url(./assets/icons/call.svg);
+    background-image: url(./../assets/icons/call.svg);
 }
 .chat-button {
-    background-image: url(./assets/icons/message.svg);
+    background-image: url(./../assets/icons/message.svg);
 }
 .profile-button {
-    background-image: url(./assets/icons/profile.svg);
+    background-image: url(./../assets/icons/profile.svg);
 }
 .repair-button {
-    background-image: url(./assets/icons/repair.svg);
+    background-image: url(./../assets/icons/repair.svg);
 }
 .checkstatus-button {
-    background-image: url(./assets/icons/check.svg);
+    background-image: url(./../assets/icons/check.svg);
 }
 .burger-menu-close {
-    background-image: url(./assets/icons/burger-close.svg);
+    background-image: url(./../assets/icons/burger-close.svg);
 }
 .search-button {
-    background-image: url(./assets/icons/search.svg);
+    background-image: url(./../assets/icons/search.svg);
 }
 
 
