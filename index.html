@@ -15,9 +15,7 @@
     <div class="container">
         <header class="header">
             <div class="header__burger-section">
-                <button type="button" class="header__button burger-menu-open">
-                    <img src="./assets/icons/burger.svg" alt="burger menu">
-                </button>
+                <button type="button" class="header__button burger-menu-open"></button>
 
                 <div class="header__logo">
                     <img src="./assets/icons/Logo.svg" atl="logo">
@@ -26,27 +24,14 @@
 
             <div class="header__buttons-row">
                 <div class="buttons-row__tablet-width">
-                    <button type="button" class="header__button">
-                        <img src="./assets/icons/call.svg" alt="call">
-                    </button>
-
-                    <button type="button" class="header__button">
-                        <img src="./assets/icons/chat.svg" alt="chat">
-                    </button>
-
-                    <button type="button" class="header__button">
-                        <img src="./assets/icons/profile.svg" alt="profile">
-                    </button>
+                    <button type="button" class="header__button call-button"></button>
+                    <button type="button" class="header__button chat-button"></button>
+                    <button type="button" class="header__button profile-button"></button>
                 </div>
 
                 <div class="buttons-row__mobile-width">
-                    <button type="button" class="header__button">
-                        <img src="./assets/icons/repair.svg" alt="repair">
-                    </button>
-
-                    <button type="button" class="header__button">
-                        <img src="./assets/icons/checkstatus.svg" alt="checkstatus">
-                    </button>
+                    <button type="button" class="header__button repair-button"></button>
+                    <button type="button" class="header__button checkstatus-button"></button>
                 </div>
             </div>
         </header>
@@ -57,18 +42,14 @@
                     <div class="aside__content__wrapper">
                         <div class="aside__header">
                             <div class="aside__header__logo-group">
-                                <button type="button" class="header__button burger-menu-close">
-                                    <img src="./assets/icons/close.svg" alt="close burger menu">
-                                </button>
+                                <button type="button" class="header__button burger-menu-close"> </button>
                     
                                 <div class="aside__header__logo">
                                     <img src="./assets/icons/Logo.svg" atl="logo">
                                 </div>
                             </div>
                             
-                            <button type="button" class="header__button">
-                                <img src="./assets/icons/search.svg" alt="search">
-                            </button>
+                            <button type="button" class="header__button search-button"></button>
                         </div>
                     
                         <menu class="aside__menu">
@@ -85,15 +66,9 @@
 
                     <div class="aside__footer">
                         <div class="aside__footer__buttons-row">
-                            <button type="button" class="header__button">
-                                <img src="./assets/icons/call.svg" alt="call">
-                            </button>
-                            <button type="button" class="header__button">
-                                <img src="./assets/icons/chat.svg" alt="chat">
-                            </button>
-                            <button type="button" class="header__button">
-                                <img src="./assets/icons/profile.svg" alt="profile">
-                            </button>
+                            <button type="button" class="header__button call-button"> </button>
+                            <button type="button" class="header__button chat-button"></button>
+                            <button type="button" class="header__button profile-button"></button>
                         </div>
         
                         <div class="aside__footer__contacts">
@@ -115,14 +90,15 @@
                         <div class="services__title">
                             <h2>Услуги и сервисы</h2>
                             <div class="services__title__buttons-row">
-                                <button type="button" class="header__button">
+                                <label class="title__buttons-row__button-wrapper">
                                     <span class="title__button">Оставить заявку</span>
-                                    <img src="./assets/icons/checkstatus.svg" alt="checkstatus">
-                                </button>
-                                <button type="button" class="header__button">
+                                    <button type="button" class="header__button checkstatus-button"></button>
+                                </label>
+
+                                <label class="title__buttons-row__button-wrapper">
                                     <span class="title__button">Статус ремонта</span> 
-                                    <img src="./assets/icons/checkstatus.svg" alt="checkstatus">
-                                </button>
+                                    <button type="button" class="header__button checkstatus-button"></button>
+                                </label>
                             </div>
                         </div>
 
@@ -181,7 +157,10 @@
                                     <p>reviews</p>
                                 </div>
 
-                                <button type="button" class="button-readmore">Читать далее</button>
+                                <div class="read-more-button-wrapper">
+                                    <button type="button" class="button-readmore">Читать далее</button>
+                                </div>
+        
                             </div>
 
                             <picture class="services__content__img">
@@ -272,7 +251,9 @@
                             <div class="swiper-pagination"></div>
                         </div>
 
-                        <button type="button" class="button-readmore brands">Показать все</button>
+                        <div class="read-more-button-wrapper">
+                            <button type="button" class="button-readmore brands">Показать все</button>
+                        </div>
                     </div>
                 </section>
             </div>

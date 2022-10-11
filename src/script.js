@@ -19,6 +19,7 @@ tabsButton.forEach(function(item) {
             tabsItems.forEach(function(item) {
                 item.classList.remove('active');
             })
+
             currentTab.classList.add('active');
 
             updateReadMoreButton('.services__content__description__text.active', '.button-readmore');
@@ -53,7 +54,7 @@ asideMenuButtonOpen.addEventListener('click', () => openAsideMenu());
 blurBlock.addEventListener('click', () => closeAsideMenu());
 
 asideMenu.addEventListener('click', event => {
-    if (event.target.parentNode.classList.contains('burger-menu-close')) {
+    if (event.target.classList.contains('burger-menu-close')) {
         closeAsideMenu();
     };
 
