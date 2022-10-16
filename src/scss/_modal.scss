@@ -1,0 +1,92 @@
+.aside__container--modal {
+    display: none;
+
+    position: fixed;
+	right: 0;
+	top: 0;
+    
+    box-sizing: border-box;
+    min-width: 320px;
+    max-width: 440px;
+    height: 100vh;
+    max-height: 1024px;
+    padding-top: 24px;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+    
+    z-index: 99;
+    background-color: $mobile-menu-background-color;
+}
+
+.modal__header {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    color: $main-black-color;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0px;
+        width: 3px;
+        height: 40px;
+        background-color: $selected-section-color;
+        border-radius: 4px;
+    }
+}
+
+.modal__header-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 24px;
+}
+
+.modal__input {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    > .order-button {
+        width: fit-content;
+        align-self: flex-end;
+        
+    }
+}
+
+.input-form {
+    width: 90%;
+    padding: 12px 16px; 
+
+    border: 1px solid $border-color;
+    border-radius: 8px;
+
+    &:focus {
+        border: 1px solid $main-black-color;
+        outline: none;
+    }
+}
+
+.input__text-under-form {
+    font-size: 14px;
+    line-height: 16px;
+    color: $services-text-color;
+
+    > a {
+        color: $button-background;
+        text-decoration: none;
+    }
+}
+
+.input-form--message {
+    height: 118px;
+    resize: none;
+}
+
+.header__button.burger-menu-close.modal-close {
+    @media (min-width: 768px) {
+        position: absolute;
+        right: 470px;
+    }
+    
+}

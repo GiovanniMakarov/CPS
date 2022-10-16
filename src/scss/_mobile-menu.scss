@@ -1,0 +1,141 @@
+.aside__container--menu {
+    position: fixed;
+	left: 0;
+	top: 0;
+    
+    box-sizing: border-box;
+    min-width: 320px;
+    height: 100vh;
+    max-height: 1024px;
+    padding: 18px 0 32px 0;
+
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+
+    z-index: 99;
+    background-color: $mobile-menu-background-color;
+
+    @media (max-height: 790px) {
+        overflow: scroll;
+    }
+    @media (max-width: 1119px) {
+        display: none;
+    }
+    @media (min-width: 1119px) {
+        position: static;
+        box-shadow: none;
+        overflow: visible;
+        z-index: auto;
+    }
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.aside__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.aside__logo-group {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.aside__link {
+    display: inline-block;
+    width: 100%;
+    color: $main-black-color;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-decoration: none;
+
+    &:hover {
+        color: $services-text-color;
+    }
+}
+
+.aside__item {
+    margin-bottom: 2rem;
+}
+
+.active-link {
+    color: $services-text-color;
+}
+
+.aside__link.active-link::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    margin-top: -4px;
+    width: 4px;
+    height: 32px;
+    background-color: $selected-section-color;
+    border-radius: 4px;
+}
+
+.aside__content__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    bottom: 10px;
+}
+
+.aside__buttons-row {
+    margin-bottom: 1rem;
+}
+
+.aside__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.aside__email {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.aside__phone {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.aside__language {
+    display: flex;
+    gap: 7px;
+}
+
+.language__button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:active {
+        transform: scale(1.08);
+    }
+}
+
+.language-selected {
+    color: $services-text-color;
+}
+

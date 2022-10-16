@@ -1,0 +1,42 @@
+.brands {
+    background-color: $background-color;
+}
+
+.brands__cards__card__img {
+    max-width: 128px;
+}
+
+.swiper-slide.brands {
+    display: flex;
+    max-width: 240px;
+}
+
+.swiper-slide__card.brands {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: $slider-btn-backcolor;
+    border: 1px solid $border-color;
+    border-radius: 6px;
+
+    box-sizing: border-box;
+    width: 240px;
+    height: 72px;
+    padding: 16px;
+}
+
+@media (min-width: 768px) {
+    .swiper-wrapper.brands-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(224px, 240px));
+        row-gap: 16px; 
+        column-gap: 24px;
+        margin-top: 16px;
+
+        max-height: 160px;
+        overflow: hidden;
+    }
+}
+
+
