@@ -310,19 +310,19 @@ template {
 
 @font-face {
   font-family: "TTLakes";
-  src: url(./../../assets/fonts/TTLakes-Regular.woff);
+  src: url(./../fonts/TTLakes-Regular.woff);
   font-style: "regular";
   font-weight: 400;
 }
 @font-face {
   font-family: "TTLakes";
-  src: url(./../../assets/fonts/TTLakes-Medium.woff);
+  src: url(./../fonts/TTLakes-Medium.woff);
   font-style: "medium";
   font-weight: 500;
 }
 @font-face {
   font-family: "TTLakes";
-  src: url(./../../assets/fonts/TTLakes-Bold.woff);
+  src: url(./../fonts/TTLakes-Bold.woff);
   font-style: "bold";
   font-weight: 700;
 }
@@ -514,7 +514,7 @@ tr, th {
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
-  color: var(--services-text-color);
+  color: #7E7E82;
   background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
   margin-bottom: 16px;
 }
@@ -563,31 +563,31 @@ tr, th {
 }
 
 .burger-menu-open {
-  background-image: url(./../../assets/icons/burger-open.svg);
+  background-image: url(./../img/icons/burger-open.svg);
 }
 
 .call-button {
-  background-image: url(./../../assets/icons/call.svg);
+  background-image: url(./../img/icons/call.svg);
 }
 
 .chat-button {
-  background-image: url(./../../assets/icons/message.svg);
+  background-image: url(./../img/icons/message.svg);
 }
 
 .profile-button {
-  background-image: url(./../../assets/icons/profile.svg);
+  background-image: url(./../img/icons/profile.svg);
 }
 
 .repair-button {
-  background-image: url(./../../assets/icons/repair.svg);
+  background-image: url(./../img/icons/repair.svg);
 }
 
 .checkstatus-button {
-  background-image: url(./../../assets/icons/check.svg);
+  background-image: url(./../img/icons/check.svg);
 }
 
 .burger-menu-close {
-  background-image: url(./../../assets/icons/burger-close.svg);
+  background-image: url(./../img/icons/burger-close.svg);
 }
 @media (min-width: 1119px) {
   .burger-menu-close.menu-close {
@@ -596,7 +596,7 @@ tr, th {
 }
 
 .search-button {
-  background-image: url(./../../assets/icons/search.svg);
+  background-image: url(./../img/icons/search.svg);
 }
 
 .read-more-button-wrapper {
