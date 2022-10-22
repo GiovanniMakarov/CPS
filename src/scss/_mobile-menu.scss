@@ -18,7 +18,9 @@
         overflow: scroll;
     }
     @media (max-width: 1119px) {
-        display: none;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .05s ease-out;
     }
     @media (min-width: 1119px) {
         position: static;

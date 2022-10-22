@@ -109,11 +109,11 @@
                     <div class="aside__content__wrapper">
                         <div class="modal__header-wrapper">
                             <button type="button" class="header__button burger-menu-close modal-close callback-close"> </button>
-                            <span class="modal__header">Заказать звонок</span>
+                            <span class="modal__header call-header">Заказать звонок</span>
                         </div>
                         
                         <div class="modal__input">
-                            <input type="tel" placeholder="Телефон" class="input-form">
+                            <input type="tel" placeholder="Телефон" class="input-form input__phone">
                             <span class="input__text-under-form">Нажимая “отправить”, вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a></span>
                             <button type="button" class="order-button">Отправить</button>
                         </div>
@@ -208,81 +208,44 @@
                 </section>
 
                 <section class="brands">
-                    <h2 class="section-name">Ремонт техники различных брендов</h2>
+                    <h2 class="section-name brands__name">Ремонт техники различных брендов</h2>
 
                     <div class="brands__content swiper-content">
                         <!-- Swiper -->
                         <div class="swiper swiper__brands" data-mobile="false">
                             <div class="swiper-wrapper brands-wrapper">
-                                <div class="swiper-slide brands">
-                                    <div class="swiper-slide__card brands">
+                                    <button type="button" class="swiper-slide swiper-slide__card brands">
                                         <img src="./img/brands-logo/lenovo.svg" class="brands__cards__card__img" alt="bosh">
-                                        <button type="button" class="card-button"></button>
-                                    </div>
-                                </div>
-                
-                                <div class="swiper-slide brands">
-                                    <div class="swiper-slide__card brands">
+                                        <div class="card-button"></div>
+                                    </button>
+
+                                    <button type="button" class=" swiper-slide swiper-slide__card brands">
                                         <img src="./img/brands-logo/samsung.svg" class="brands__cards__card__img" alt="bosh">
-                                        <button type="button" class="card-button"></button>
-                                    </div>
-                                </div>
-                
-                                <div class="swiper-slide brands">
-                                    <div class="swiper-slide__card brands">
+                                        <div class="card-button"></div>
+                                    </button>
+                                    <button type="button" class=" swiper-slide swiper-slide__card brands">
                                         <img src="./img/brands-logo/apple.svg" class="brands__cards__card__img" alt="bosh">
-                                        <button type="button" class="card-button"></button>
-                                    </div>
-                                </div>
-                
-                                <div class="swiper-slide brands">
-                                    <div class="swiper-slide__card brands">
-                                        <img src="./img/brands-logo/VS.svg" class="brands__cards__card__img" alt="bosh">
-                                        <button type="button" class="card-button"></button>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide brands">
-                                    <div class="swiper-slide__card brands">
+                                        <div class="card-button"></div>
+                                    </button>
+                                    <button type="button" class=" swiper-slide swiper-slide__card brands">
+                                        <img src="./img/brands-logo/VS.svg" class="brands__cards__card__img" alt="bosh">                                        <div class="card-button"></div>
+                                    </button>
+                                    <button type="button" class=" swiper-slide swiper-slide__card brands">
                                         <img src="./img/brands-logo/bosh.svg" class="brands__cards__card__img" alt="bosh">
-                                        <button type="button" class="card-button"></button>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide brands">
-                                    <div class="swiper-slide__card brands">
+                                        <div class="card-button"></div>
+                                    </button>
+                                    <button type="button" class=" swiper-slide swiper-slide__card brands">
                                         <img src="./img/brands-logo/hp.svg" class="brands__cards__card__img" alt="bosh">
-                                        <button type="button" class="card-button"></button>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide brands">
-                                    <div class="swiper-slide__card brands">
-                                        <img src="./img/brands-logo/hp.svg" class="brands__cards__card__img" alt="bosh">
-                                        <button type="button" class="card-button"></button> 
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide brands">
-                                    <div class="swiper-slide__card brands">
+                                        <div class="card-button"></div>
+                                    </button>
+                                    <button type="button" class=" swiper-slide swiper-slide__card brands">
                                         <img src="./img/brands-logo/acer.svg" class="brands__cards__card__img" alt="bosh">
-                                        <button type="button" class="card-button"></button>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide brands">
-                                    <div class="swiper-slide__card brands">
+                                        <div class="card-button"></div>
+                                    </button>
+                                    <button type="button" class=" swiper-slide swiper-slide__card brands">
                                         <img src="./img/brands-logo/sony.svg" class="brands__cards__card__img" alt="bosh">
-                                        <button type="button" class="card-button"></button>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide brands">
-                                    <div class="swiper-slide__card brands">
-                                        <img src="./img/brands-logo/bosh.svg" class="brands__cards__card__img" alt="bosh">
-                                        <button type="button" class="card-button"></button>
-                                    </div>
-                                </div>
+                                        <div class="card-button"></div>
+                                    </button>
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
@@ -294,55 +257,37 @@
                 </section>
 
                 <section class="equipment">
-                    <h2 class="section-name">Ремонт различных видов техники</h2>
+                    <h2 class="section-name equipment__name">Ремонт различных видов техники</h2>
 
                     <div class="equipment__content swiper-content">
-                        
                         <div class="swiper swiper__equipment" data-mobile="false">
                             <div class="swiper-wrapper equipment-wrapper">
 
-                                <div class="swiper-slide equipment">
-                                    <div class="swiper-slide__card equipment">
-                                        <span class="equipment__card-text">Ремонт ноутбуков</span>
-                                        <button type="button" class="card-button card-button--equipment"></button>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide equipment">
-                                    <div class="swiper-slide__card equipment">
-                                        <span class="equipment__card-text">Ремонт планшетов</span>
-                                        <button type="button" class="card-button card-button--equipment"></button>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide equipment">
-                                    <div class="swiper-slide__card equipment">
-                                        <span class="equipment__card-text">Ремонт ПК</span>
-                                        <button type="button" class="card-button card-button--equipment"></button>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide equipment">
-                                    <div class="swiper-slide__card equipment">
-                                        <span class="equipment__card-text">Ремонт мониторов</span>
-                                        <button type="button" class="card-button card-button--equipment"></button>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide equipment">
-                                    <div class="swiper-slide__card equipment">
-                                        <span class="equipment__card-text">Ремонт зарядок</span>
-                                        <button type="button" class="card-button card-button--equipment"></button>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide equipment">
-                                    <div class="swiper-slide__card equipment">
-                                        <span class="equipment__card-text">Ремонт электронных книг</span>
-                                        <button type="button" class="card-button card-button--equipment"></button>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide equipment">
-                                    <div class="swiper-slide__card equipment">
-                                        <span class="equipment__card-text">Ремонт телевизоров</span>
-                                        <button type="button" class="card-button card-button--equipment"></button>
-                                    </div>
-                                </div>
+                                
+                                <button type="button" class="swiper-slide swiper-slide__card equipment">
+                                    <span class="equipment__card-text">Ремонт ноутбуков</span>
+                                    <div type="button" class="card-button card-button--equipment"></div>
+                                </button>
+                                <button type="button" class="swiper-slide swiper-slide__card equipment">
+                                    <span class="equipment__card-text">Ремонт планшетов</span>
+                                    <div type="button" class="card-button card-button--equipment"></div>
+                                </button>
+                                <button type="button" class="swiper-slide swiper-slide__card equipment">
+                                    <span class="equipment__card-text">Ремонт ПК</span>
+                                    <div type="button" class="card-button card-button--equipment"></div>
+                                </button>
+                                <button type="button" class="swiper-slide swiper-slide__card equipment">
+                                    <span class="equipment__card-text">Ремонт мониторов</span>
+                                    <div type="button" class="card-button card-button--equipment"></div>
+                                </button>
+                                <button type="button" class="swiper-slide swiper-slide__card equipment">
+                                    <span class="equipment__card-text">Ремонт зарядок</span>
+                                    <div type="button" class="card-button card-button--equipment"></div>
+                                </button>
+                                <button type="button" class="swiper-slide swiper-slide__card equipment">
+                                    <span class="equipment__card-text">Ремонт телевизоров</span>
+                                    <div type="button" class="card-button card-button--equipment"></div>
+                                </button>
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
@@ -351,11 +296,10 @@
                             <button type="button" class="button-readmore button-readmore--equipment button-readmore--slider">Показать все</button>
                         </div>
                     </div>
-
                 </section>
 
                 <section class="price">
-                    <h2 class="section-name">Цены на услуги</h2>
+                    <h2 class="section-name price__name">Цены на услуги</h2>
 
                     <div class="price__content swiper-content">
                         

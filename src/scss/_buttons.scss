@@ -122,26 +122,22 @@
     width: 40px;
     height: 40px;
 
+    position: relative;
+
     &::after {
         content: '';
         position: absolute;
         border-right: 2px solid $button-background;
         width: 7px;
         height: 7px;
+        align-self: center;
+        top: 50%;
+
         border-top: 2px solid $button-background;
         border-radius: 1px;
         transform: rotate(45deg) translate(-7px);
     }
 
-    &:hover {
-        transform: scale(1.03);
-        transition: .1s ease-in;
-    }
-
-    &:active {
-        transform: scale(1); 
-        transition: .1s;
-    }
 }
 
 .order-button {

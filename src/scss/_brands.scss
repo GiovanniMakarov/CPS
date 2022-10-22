@@ -24,6 +24,17 @@
     width: 240px;
     height: 72px;
     padding: 16px;
+
+    &:hover {
+        transition: .1s ease-in;
+        cursor: pointer;
+        border: 1px solid $button-background; 
+    }
+
+    &:active {
+        transform: scale(0.98); 
+        transition: .1s;
+    }
 }
 
 @media (min-width: 768px) {

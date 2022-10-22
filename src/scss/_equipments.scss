@@ -30,6 +30,17 @@
     min-height: 160px;
 
     background-color: $slider-btn-backcolor;
+
+    &:hover {
+        transition: .1s ease-in;
+        cursor: pointer;
+        border: 1px solid $button-background; 
+    }
+
+    &:active {
+        transform: scale(0.98); 
+        transition: .1s;
+    }
 }
 
 .swiper-slide.equipment {

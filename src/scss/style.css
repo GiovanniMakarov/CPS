@@ -363,6 +363,11 @@ tr, th {
   display: block !important;
 }
 
+.show-slow {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
 .no-scroll {
   overflow: hidden !important;
 }
@@ -374,7 +379,9 @@ tr, th {
 }
 
 .blur-wrapper {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.05s ease-out;
   position: absolute;
   top: 0;
   left: 0;
@@ -487,6 +494,15 @@ tr, th {
   width: 240px;
   height: 72px;
   padding: 16px;
+}
+.swiper-slide__card.brands:hover {
+  transition: 0.1s ease-in;
+  cursor: pointer;
+  border: 1px solid #FF3E79;
+}
+.swiper-slide__card.brands:active {
+  transform: scale(0.98);
+  transition: 0.1s;
 }
 
 @media (min-width: 768px) {
@@ -639,6 +655,7 @@ tr, th {
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  position: relative;
 }
 .card-button::after {
   content: "";
@@ -646,17 +663,11 @@ tr, th {
   border-right: 2px solid #FF3E79;
   width: 7px;
   height: 7px;
+  align-self: center;
+  top: 50%;
   border-top: 2px solid #FF3E79;
   border-radius: 1px;
   transform: rotate(45deg) translate(-7px);
-}
-.card-button:hover {
-  transform: scale(1.03);
-  transition: 0.1s ease-in;
-}
-.card-button:active {
-  transform: scale(1);
-  transition: 0.1s;
 }
 
 .order-button {
@@ -936,7 +947,9 @@ tr, th {
 }
 @media (max-width: 1119px) {
   .aside__container--menu {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.05s ease-out;
   }
 }
 @media (min-width: 1119px) {
@@ -1082,6 +1095,15 @@ tr, th {
   width: 240px;
   min-height: 160px;
   background-color: #FFFFFF;
+}
+.swiper-slide__card.equipment:hover {
+  transition: 0.1s ease-in;
+  cursor: pointer;
+  border: 1px solid #FF3E79;
+}
+.swiper-slide__card.equipment:active {
+  transform: scale(0.98);
+  transition: 0.1s;
 }
 
 .swiper-slide.equipment {
@@ -1314,7 +1336,9 @@ tr, th {
   }
 }
 .aside__container--modal {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.05s ease-out;
   position: fixed;
   right: 0;
   top: 0;
@@ -1370,8 +1394,7 @@ tr, th {
   border-radius: 8px;
 }
 .input-form:focus {
-  border: 1px solid #1B1C21;
-  outline: none;
+  outline: 1px solid #1B1C21;
 }
 
 .input__text-under-form {
