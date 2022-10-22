@@ -352,6 +352,10 @@ tr, th {
 .show {
   display: block !important; }
 
+.show-slow {
+  visibility: visible !important;
+  opacity: 1 !important; }
+
 .no-scroll {
   overflow: hidden !important; }
 
@@ -361,7 +365,9 @@ tr, th {
   position: relative; }
 
 .blur-wrapper {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .05s ease-out;
   position: absolute;
   top: 0;
   left: 0;
@@ -455,6 +461,13 @@ tr, th {
   width: 240px;
   height: 72px;
   padding: 16px; }
+  .swiper-slide__card.brands:hover {
+    transition: .1s ease-in;
+    cursor: pointer;
+    border: 1px solid #FF3E79; }
+  .swiper-slide__card.brands:active {
+    transform: scale(0.98);
+    transition: .1s; }
 
 @media (min-width: 768px) {
   .swiper-wrapper.brands-wrapper {
@@ -579,22 +592,19 @@ tr, th {
   border: 2px solid #FF3E79;
   border-radius: 50%;
   width: 40px;
-  height: 40px; }
+  height: 40px;
+  position: relative; }
   .card-button::after {
     content: '';
     position: absolute;
     border-right: 2px solid #FF3E79;
     width: 7px;
     height: 7px;
+    align-self: center;
+    top: 50%;
     border-top: 2px solid #FF3E79;
     border-radius: 1px;
     transform: rotate(45deg) translate(-7px); }
-  .card-button:hover {
-    transform: scale(1.03);
-    transition: .1s ease-in; }
-  .card-button:active {
-    transform: scale(1);
-    transition: .1s; }
 
 .order-button {
   font-size: 12px;
@@ -821,7 +831,9 @@ tr, th {
       overflow: scroll; } }
   @media (max-width: 1119px) {
     .aside__container--menu {
-      display: none; } }
+      visibility: hidden;
+      opacity: 0;
+      transition: all .05s ease-out; } }
   @media (min-width: 1119px) {
     .aside__container--menu {
       position: static;
@@ -945,6 +957,13 @@ tr, th {
   width: 240px;
   min-height: 160px;
   background-color: #FFFFFF; }
+  .swiper-slide__card.equipment:hover {
+    transition: .1s ease-in;
+    cursor: pointer;
+    border: 1px solid #FF3E79; }
+  .swiper-slide__card.equipment:active {
+    transform: scale(0.98);
+    transition: .1s; }
 
 .swiper-slide.equipment {
   max-width: 240px; }
@@ -1130,7 +1149,9 @@ tr, th {
       max-width: 260px; } }
 
 .aside__container--modal {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .05s ease-out;
   position: fixed;
   right: 0;
   top: 0;
@@ -1181,8 +1202,7 @@ tr, th {
   border: 1px solid #EAEAEA;
   border-radius: 8px; }
   .input-form:focus {
-    border: 1px solid #1B1C21;
-    outline: none; }
+    outline: 1px solid #1B1C21; }
 
 .input__text-under-form {
   font-size: 14px;
