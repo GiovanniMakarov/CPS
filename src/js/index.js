@@ -121,7 +121,7 @@ window.addEventListener('resize', () => {
     mobileSlider(sliderPrice, ".swiper__price");
 })
 
-const mobileSlider = (slider, swiperClass) => {
+function mobileSlider (slider, swiperClass) {
     if (window.innerWidth < 768 && slider.dataset.mobile == 'false') {
         let swiper = new Swiper(swiperClass, {
             slidesPerView: "auto",
